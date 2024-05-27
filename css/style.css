@@ -365,7 +365,6 @@ z-index: 999;
 .navigation.navbar-dark .navbar-nav .nav-link.active,
 .navigation.navbar-dark .navbar-nav .nav-link.show,
 .navigation.navbar-dark .navbar-nav .show>.nav-link {
-     color: #fff;
      background: #FED10C;
 }
 
@@ -1142,7 +1141,7 @@ hr {
 .main_form .send_btn {
      font-size: 18px;
      transition: ease-in all 0.5s;
-     background-color: #f0390f;
+     background-color: #134D8E;
      text-transform: uppercase;
      color: #fff;
      max-width: 193px;
@@ -1153,6 +1152,7 @@ hr {
      height: 53px;
      border-radius: 10px;
      padding: 13px 0;
+    margin: auto
 }
 
 .main_form .send_btn:hover {
@@ -1423,3 +1423,54 @@ equipe {
 
 
 /** fin compet barre horizontale **/
+
+/** sous menu **/
+
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        width: 200px;
+        transform: scale(0.95);
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        opacity: 0;
+
+    }
+
+    .dropdown:hover .dropdown-menu,
+    .dropdown-menu:hover 
+{
+        display: block;
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    .dropdown-menu li {
+        padding: 0;
+    }
+
+    .dropdown-menu li a {
+        display: block;
+        padding: 10px 20px;
+        color: #000;
+        text-decoration: none;
+    }
+
+    .dropdown-menu li a:hover {
+        background-color: #495057;
+    }
+
+    .dropdown:hover .nav-link,
+    .dropdown-menu:hover .nav-link {
+        background-color: #134D8E;
+        color: #fff;
+    }
+
+    #news1:hover {
+        background-color: #458CC6;
+    }
+
+/** fin sous menu **/
