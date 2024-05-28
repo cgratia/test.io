@@ -1474,3 +1474,44 @@ equipe {
     }
 
 /** fin sous menu **/
+
+/** chiffres défilants **/
+
+ chiffres {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30vh;
+            margin: 0;
+            background-color: #fff;
+        }
+        .container18 {
+            display: flex;
+            gap: 200px;
+        }
+        .box149 {
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            padding: 20px;
+            width: 250px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            color: #2b2b2b;
+        }
+        .number {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .text {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+        }
+
+/** fin chiffres défilants **/

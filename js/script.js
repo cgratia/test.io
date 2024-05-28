@@ -6,3 +6,4 @@ window.addEventListener('load', () => {
     const clone = slide.cloneNode(true);
     slider.appendChild(clone);
 });
+
