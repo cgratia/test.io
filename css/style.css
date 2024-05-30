@@ -1466,12 +1466,19 @@ equipe {
     .dropdown:hover .nav-link,
     .dropdown-menu:hover .nav-link {
         background-color: #134D8E;
-        color: #fff;
+        color: #fff !important;
     }
 
     #news1:hover {
         background-color: #458CC6;
     }
+
+
+@media (max-width: 767px) {
+    .dropdown:hover .dropdown-menu, .dropdown-menu:hover  {
+        display: none; 
+    }
+}
 
 /** fin sous menu **/
 

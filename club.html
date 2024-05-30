@@ -158,7 +158,7 @@
                       <br><br><br>
                      <h2 id="histoire">Le Club</h2>
                       <chiffres>
-                          <div class="container18">
+                          <div class="container18" id="numbers">
                                 <div class="box149">
                                     <div class="number" id="number1">0</div>
                                     <div class="text">adhérents en 2024</div>
@@ -169,23 +169,56 @@
                                 </div>
                           </div>
 <script>
-        function animateNumber(elementId, endValue, duration) {
-            const element = document.getElementById(elementId);
-            let startValue = 0;
-            const increment = endValue / (duration / 10);
-
-            const interval = setInterval(() => {
-                startValue += increment;
-                element.textContent = Math.floor(startValue);
-                if (startValue >= endValue) {
-                    clearInterval(interval);
-                    element.textContent = endValue;
-                }
-            }, 10);
+    
+    let element = document.querySelector('#numbers');
+    
+    window.addEventListener("scroll", handleScroll);
+    function handleScroll(e){
+        console.log("truc");
+        if (isInViewport(element)) {
+            console.log("visible");
+            // Exécutez votre script ici
+          
+            animateNumber('number1', 223, 3000);
+            animateNumber('number2', 330, 3000);
+            window.removeEventListener('scroll',handleScroll);
         }
+    }
+        
+    function animateNumber(elementId, endValue, duration) {
+        const element = document.getElementById(elementId);
+        let startValue = 0;
+        const increment = endValue / (duration / 10);
 
-        animateNumber('number1', 223, 3000);
-        animateNumber('number2', 330, 3000);
+        const interval = setInterval(() => {
+            startValue += increment;
+            element.textContent = Math.floor(startValue);
+            if (startValue >= endValue) {
+                clearInterval(interval);
+                element.textContent = endValue;
+            }
+        }, 10);
+    }
+
+    
+    // Fonction pour vérifier si l'élément est dans la fenêtre de visualisation
+    function isInViewport(el) {
+        let rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+        // Écoutez l'événement de défilement
+    window.addEventListener('scroll', handleScroll);
+    
+    
+
+
+       
 </script>
 
                       </chiffres>
@@ -244,6 +277,7 @@
                                         <div class="logo-slide" id="logo-slide">
                                             <img src="logo/babolat.png" alt="Babolat">
                                             <img src="logo/bonici.jpeg" alt="Pizza Bonici">
+                                            
                                             <img src="logo/dauph.png" alt="Chateau des Dauphins">
                                             <img src="logo/comitegironde.png" alt="Comité Gironde">
                                             <img src="logo/gironde.png" alt="Département de la Gironde">
@@ -251,11 +285,11 @@
                                             <img src="logo/isassur.jpeg" alt="Isassur">
                                             <img src="logo/2AAA54AB-A507-47D1-88E5-E228EA82AF7B%20copie.png" alt="M2S33">
                                             <img src="logo/mapetitesponso.jpeg" alt="Ma Petite Sponso">
-                                            <img src="logo/mobisport.png" alt="Mobisport">
+                                            <!-- <img src="logo/mobisport.png" alt="Mobisport">
                                             <img src="logo/normad1.png" alt="Normad1">
                                             <img src="logo/pierrefabre.png" alt="Laboratoire Pierre Fabre">
                                             <img src="logo/stsu.png" alt="Saint-Sulpice-Et-Cameyrac">
-                                            <img src="logo/superubase.jpg" alt="Super U Saint-Sulpice-Et-Cameyrac">            
+                                            <img src="logo/superubase.jpg" alt="Super U Saint-Sulpice-Et-Cameyrac">   -->         
                                         </div>
                                     </div>
                                 </div>
