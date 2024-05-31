@@ -1324,16 +1324,12 @@ test3 {
 
 /** partenaires **/ 
 
-partenaires {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 15vh;
-    margin: 0;
+.partners-container a {
+    /* Styles spécifiques pour les éléments <a> à l'intérieur de .partners-container */
+    text-decoration: none; /* Supprime le soulignement par défaut */
 }
 
+/* Styles déjà existants pour .partners-container, .logo-slider, .logo-slide et .logo-slide img */
 .partners-container {
     width: 80%;
     overflow: hidden;
@@ -1343,34 +1339,37 @@ partenaires {
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
+    margin: 0 auto; /* Centre le rectangle horizontalement */
 }
 
 .logo-slider {
     display: flex;
     align-items: center;
     white-space: nowrap;
-    overflow: hidden;
+    overflow: auto; /* Permet de faire défiler les logos horizontalement si nécessaire */
 }
 
 .logo-slide {
     display: flex;
-    animation: marquee 15s linear infinite alternate;
+    flex-wrap: wrap; /* Permet aux logos de passer à la ligne si nécessaire */
+    justify-content: space-around; 
 }
 
 .logo-slide img {
-    width: 150px; /* Fixer la largeur des logos */
-    height: 50px; /* Garder le ratio original des images */
-    margin: 0 15px;
+    width: calc(20% - 30px); /* Calcul de la largeur pour assurer 5 logos par ligne */
+    max-height: 100px; /* Ajustement de la hauteur maximale */
+    object-fit: contain;
+    margin: 0 15px 15px 0; /* Espacement entre les logos */
+}
+.logo-slide a img {
+    /* Définir une taille spécifique pour l'image à l'intérieur de l'élément <a> */
+    width: 150px;
+    height: 100px; /* Permet à l'image de conserver son ratio d'aspect */
 }
 
-@keyframes marquee {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
+
+
+
 
 /** fin partenaires **/ 
 
@@ -1522,3 +1521,13 @@ equipe {
         }
 
 /** fin chiffres défilants **/
+
+/** img rejoindre **/
+
+.img_responsive2 {
+     max-width: 100%;
+    border-radius: 20px;
+    height: 250px;
+}
+
+/** fin img rejoindre **/
