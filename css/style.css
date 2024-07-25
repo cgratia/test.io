@@ -297,8 +297,8 @@ button {
 .img_responsive {
      max-width: 100%;
     border-radius: 20px;
+    height: auto;
 }
-
 
 /**-- heading section --**/
 
@@ -493,7 +493,11 @@ ul.email li i {
 
 .banner_img {
      padding-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .banner_img figure {
      margin: 0;
@@ -1530,4 +1534,23 @@ equipe {
     height: 250px;
 }
 
+.img_responsive3 {
+     max-width: 100%;
+    border-radius: 20px;
+    height: 250px;
+}
+
+
 /** fin img rejoindre **/
+
+/** mot prési **/
+
+.president-message {
+       /** border: 2px solid #000; /* Définit une bordure noire de 2 pixels */ **/
+        padding: 15px 15px 15px 15px; /* Ajoute de l'espace à l'intérieur du rectangle */
+        margin: 20px 50px; /* Ajoute de l'espace autour du rectangle */
+        background-color: #ffffff; /* Définit une couleur de fond légère */
+        border-radius: 10px; /* Ajoute des coins arrondis */
+    
+/** fin mot prési **/
+    
