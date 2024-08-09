@@ -16,7 +16,7 @@
       <!-- bootstrap css -->
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <!-- style css -->
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/styles.min.css">
       <!-- Responsive-->
       <link rel="stylesheet" href="css/responsive.css">
       <!-- fevicon -->
@@ -63,7 +63,7 @@
                                <ul class="dropdown-menu">
                                     <li><a href="club.html#histoire" class="news-item" id="news1">Histoire</a></li>
                                     <li><a href="club.html#installations" class="news-item" id="news1">Les installations</a></li>
-                                    <li><a href="club.html#pedago" class="news-item" id="news1">Équipe pédagogique</a></li>
+                                    <li><a href="club.html#pedago" class="news-item" id="news1">Équipe</a></li>
                                     <li><a href="club.html#partenaires" class="news-item" id="news1">Nos partenaires</a></li>
                                 </ul>
                            </li>
@@ -155,110 +155,16 @@
          <div class="container">
             <div class="row">
                <div class="col-md-12">
-                  <div class="titlepage text_align_center">
-                  <!--   <h2 id="entrainement">Entrainements</h2>
-                     <p>Différents entraînements( par niveau, récurrence...)</p>
-                      <br>
-                      <br>
-
-                   
-
-                      <br>
-                      <br>
-                   <h2 id="hs">Hors Saison</h2>
-                     <p>Les terrains restent ouverts pour tous, en dehors des créneaux d'entraînements, sous réservation.</p>
-                      <br>
-                      <br> -->
-                      <h2 id="scolaire">Tennis Scolaire</h2>
-                     <p>L'histoire de notre club s'appuie sur les enfants car nous sommes convaincus que l'apprentissage de notre sport et les vertus qu'il véhicule sont une chance pour l'avenir et un atout pour la personne. Entrer dans le giron scolaire nous semblait être le chaînon manquant avec l'idée de créer une régularité, une continuité depuis l'école maternelle jusqu'au CM2. <br> Il est évidemment question de développement humain et physique et notre projet, pensé dans une globalité permet de continuer la pratique du tennis en club en proposant un créneau dédié "juste après l'école" avec réception, accompagnement et encadrement des enfants. <br>Notre moniteur étant d'origine britannique, les parcours école/club (pedibus) seront l'occasion de faire découvrir et pratiquer l'anglais aux jeunes écoliers. Le tennis à l'école est également l'occasion d'apprendre de façon encadrée et ludique, le respect des règles (un capitaine est nommé par groupe et change toutes les semaines, le rangement est effectué par les enfants eux-mêmes, les déplacements d'un atelier à un autre s'effectuent sous la "responsabilité" du capitaine...), des autres, des structures, des adultes, de développer l'imagination et le sens artistique (travaux de dessin autour du tennis), mais également de conforter.</p>
-                      <br>
+                   <div class="titlepage text_align_center">
+                   <h2 id="scolaire">Tennis Scolaire</h2>
                       
-                    <!-- POP-UP 
-                      
-                     
-                      <style>
-                          .popup {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgb(0,0,0);
-            background-color: rgba(0,0,0,0.4);
-        }
-
-        .popup-content {
-            background-color: #fefefe;
-            margin: 5% auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-            max-height: 80vh;
-        }
-
-        .popup-content iframe {
-            width: 100%;
-            height: 80vh;
-        }
-
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
-    </style>
-                      <!-- Fin CSS -->
+                   <p>L'histoire de notre club s'appuie sur les enfants car nous sommes convaincus que l'apprentissage de notre sport et les vertus qu'il véhicule sont une chance pour l'avenir et un atout pour la personne. Entrer dans le giron scolaire nous semblait être le chaînon manquant avec l'idée de créer une régularité, une continuité depuis l'école maternelle jusqu'au CM2. </p>
+                   <p>Il est évidemment question de développement humain et physique et notre projet, pensé dans une globalité permet de continuer la pratique du tennis en club en proposant un créneau dédié "juste après l'école" avec réception, accompagnement et encadrement des enfants. </p>
+                   <p>Notre moniteur étant d'origine britannique, les parcours école/club (pedibus) seront l'occasion de faire découvrir et pratiquer l'anglais aux jeunes écoliers. Le tennis à l'école est également l'occasion d'apprendre de façon encadrée et ludique, le respect des règles (un capitaine est nommé par groupe et change toutes les semaines, le rangement est effectué par les enfants eux-mêmes, les déplacements d'un atelier à un autre s'effectuent sous la "responsabilité" du capitaine...), des autres, des structures, des adultes, de développer l'imagination et le sens artistique (travaux de dessin autour du tennis), mais également de conforter.</p>
+                      <br>
                       
                       <a href="pdf/tennis%20a%20l'%C3%A9cole.pdf" target="_blank"><button class="subsci_btn" id="openPopup">En savoir plus</button> </a>
                       
-                      <!-- Fenêtre du pop-up 
-                      <div id="myPopup" class="popup">
-                          <div class="popup-content">
-                              <span class="close" id="closePopup">&times;</span>
-                              <iframe src="pdf/tennis%20a%20l'%C3%A9cole.pdf" frameborder="0"></iframe>
-                          </div>
-                      </div>
-                      
-                      <!-- SCRIPT DU POP-UP -->
-                      
-                      <script>
-                           // Obtenez les éléments
-    var popup = document.getElementById("myPopup");
-    var openBtn = document.getElementById("openPopup");
-    var closeBtn = document.getElementById("closePopup");
-
-    // Ouvrir le pop-up
-    openBtn.onclick = function() {
-        popup.style.display = "block";
-    }
-
-    // Fermer le pop-up
-    closeBtn.onclick = function() {
-        popup.style.display = "none";
-    }
-
-    // Fermer le pop-up si l'utilisateur clique en dehors du contenu
-    window.onclick = function(event) {
-        if (event.target == popup) {
-            popup.style.display = "none";
-        }
-    }
-                      </script>
-                      
-                      <!-- FIN DU SCRIPT --> 
-                      
-                      <br>
                       <br>
                       <br>
                                     
@@ -343,9 +249,8 @@
                       
                      <p>Le 24 juin 2023. à loccasion de la Journée Olympique, nous sera remis à Bordeaux, le diplôme du label « Valides-Handicapés : pour une pratique sportive partagée ».
                      Ce label est une marque de qualité concernant l'accueil des personnes en situation de handicap, désirant pratiquer régulièrement une activité physique et sportive, de compétition ou de loisir. Il identifie l'accessibilité des lieux de pratiques sportives, la qualité de l'encadrement pour les personnes ayant besoin d'adaptation pour les principales déficiences.
-                     Vous ne le savez peut-être pas, mais nous accueillons déjà dans différents groupes, des personnes présentant ces caractéristiques. La présence de ce label nous donnera plus de visibilité et marque notre engagement dans la mise en oeuvre d'une pratique sportive pour tous.
-                         <br>
-                     Nous sommes très fiers d'avoir été retenus et je remercie Russ et Frédéric pour leur défense de notre ambition devant la Commission référente.</p>
+                     Vous ne le savez peut-être pas, mais nous accueillons déjà dans différents groupes, des personnes présentant ces caractéristiques. La présence de ce label nous donnera plus de visibilité et marque notre engagement dans la mise en oeuvre d'une pratique sportive pour tous.</p>
+                     <p>Nous sommes très fiers d'avoir été retenus et je remercie Russ et Frédéric pour leur défense de notre ambition devant la Commission référente.</p>
                       <br>
                       <br>
                       <a href="images/sante/nva.jpg" target="_blank"><img src="images/sante/nva.jpg" alt="Photo remise label" style="max-width: 100%; height: auto; border-radius: 10px;"></a>

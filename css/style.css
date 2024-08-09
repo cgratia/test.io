@@ -517,7 +517,24 @@ ul.email li i {
      font-size: 17px;
      padding-top: 15px;
      color: #2b2b2b;
+     text-align: justify;
+     max-width: 75ch;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.class .titlepage p.merci {
+     text-align: center;
+}
+
+.class .titlepage .person p {
+     text-align: center;
+}
+
+.class .titlepage .video-box p {
+     text-align: center;
+}
+
 
 .class_box {
      border-radius: 10px;
@@ -1389,6 +1406,7 @@ equipe {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
+            justify-content: center;
         }
 
         .person {
@@ -1515,9 +1533,12 @@ equipe {
             color: #2b2b2b;
         }
         .number {
-            font-family: 'Libre Baskerville', serif;
-            font-size: 2em;
-            margin-bottom: 10px;
+         /**   font-family: 'Libre Baskerville', serif; **/
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            font-size: 3.5em;
+            color: #458CC6;
+            margin-bottom: 0px;
         }
         .text {
             font-family: 'Roboto', sans-serif;
@@ -1553,4 +1574,3 @@ equipe {
         border-radius: 10px; /* Ajoute des coins arrondis */
     
 /** fin mot prési **/
-    
